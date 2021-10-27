@@ -23,6 +23,7 @@
 - Data Source - Final Assessment (Sports Direct)
 - This dataset contains customer response towards the gift voucher survey.
 - This data contain 9 attributes with 150,000 observations.
+
 ![image](https://user-images.githubusercontent.com/28688869/139120658-92414ba9-90b5-462b-b360-8819f9a9c126.png)
 
 ## Data Understanding
@@ -53,16 +54,19 @@
 ### Passenger Sastifaction
 - 47,400 customer responded towards the gift purchase.
 - However, the other 102,600 customer do not response with the gift purchase.
+
 ![image](https://user-images.githubusercontent.com/28688869/139121120-c902fba1-508d-4104-a731-a7b7ee7a40e3.png)
 
 ## Data Preparation
 ### What kind of preparation?
 - Putting the dataset inside for data preparation.
+
 ![image](https://user-images.githubusercontent.com/28688869/139121236-6800cb0e-041f-4d5d-93be-e1650a68d96c.png)
 
 - No correlation value will have some problem as the data looks not clean.
 - There’s no correlation value for sports and lifestyle.
 - The attributes were removed.
+
 ![image](https://user-images.githubusercontent.com/28688869/139121437-01e4e145-c2a0-4f94-aeff-e5093d0c3728.png)
 
 - Using “Select Attributes” operator.
@@ -72,6 +76,7 @@
   - “sports”
   - “zip code”
 - Attribute Filter Type Parameter will be “subset”
+
 ![image](https://user-images.githubusercontent.com/28688869/139121605-25f62f3f-907f-4ace-84d0-e7caed9ace50.png)
 
 - Replacing features name.
@@ -79,8 +84,11 @@
 - Attribute filter type will be “single”.
 - Chosen features will be “label”.
 - Replacing features name of “response” to “responsive” and “non response” to “non responsive.
+
 ![image](https://user-images.githubusercontent.com/28688869/139121673-c6dc3727-ecbe-44d7-b3e6-a65715ebaf4a.png)
+
 ![image](https://user-images.githubusercontent.com/28688869/139121691-90f05619-abc4-44ee-9ff0-33a3f1932b60.png)
+
 ![image](https://user-images.githubusercontent.com/28688869/139121703-41f9b44d-7330-42b1-a80c-f63280aceb29.png)
 
 - Replacing features name.
@@ -88,7 +96,9 @@
 - Attribute filter type will be “single”.
 - Chosen features will be “car”.
 - Replacing features name of “expensive” to “0” and “practical” to “1”.
+
 ![image](https://user-images.githubusercontent.com/28688869/139121775-337dd768-8c17-4ee4-97c3-a59c354f99db.png)
+
 ![image](https://user-images.githubusercontent.com/28688869/139121791-a9be83c7-07ad-4733-8f99-5d584f655e77.png)
 
 - Replacing features name.
@@ -96,18 +106,24 @@
 - Attribute filter type will be “single”.
 - Chosen features will be “family status”.
 - Replacing features name of “single” to “0” and “married” to “1”.
+
 ![image](https://user-images.githubusercontent.com/28688869/139121832-da25da40-5f9f-48d7-bff6-0831bf293026.png)
+
 ![image](https://user-images.githubusercontent.com/28688869/139121847-ab9377c1-da64-489b-bdb8-022132cb5a10.png)
 
 - Using the “Rename” operator to rename the label.
 - Renaming from old name “label” to “response”.
+
 ![image](https://user-images.githubusercontent.com/28688869/139121904-17e15fcc-5e54-40ce-9a1e-f63dfffce08f.png)
+
 ![image](https://user-images.githubusercontent.com/28688869/139121916-1a26172f-503a-49a3-ac75-d36161db562e.png)
 
 - Setting the roles.
 - Using the “Set Role” operator to set the roles.
 - In the “Parameter”, attribute name “response” will be chosen and target role will be “label”.
+
 ![image](https://user-images.githubusercontent.com/28688869/139121978-33d12a72-fa4a-4337-b1c1-21d026a869f5.png)
+
 ![image](https://user-images.githubusercontent.com/28688869/139122008-79974dbf-2fd5-4f56-a416-51780ea89aa3.png)
 
 ## Modelling
@@ -136,6 +152,7 @@
 - Decision Tree has the best performance compared to Random Tree and Naive Bayes.
 Area under the ROC curve is a measure of model performance.
 Decision Tree has the best performance compared to Random Tree and Naive Bayes.
+
 ![image](https://user-images.githubusercontent.com/28688869/139122374-219056e2-9bc9-4375-9a7d-ee167379e501.png)
 
 ### Accuracy & Precision
@@ -145,6 +162,7 @@ Decision Tree has the best performance compared to Random Tree and Naive Bayes.
   - What do we do with predicted not-responsive customers?
     - Improving the services offered e.g. online services for buying sports equipment and easier delivery or pick up in the store.
     - Offering different package then gift purchase e.g. sports equipments.
+
 ![image](https://user-images.githubusercontent.com/28688869/139122502-1cbf8ad8-a337-44b5-a8e5-5d59d4bc3237.png)
 
 ### Conclusion
